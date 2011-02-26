@@ -360,6 +360,9 @@ nmap <down> gj
 " PIV: no default folding
 "let g:DisableAutoPHPFolding = 1
 
+" toggle graphical undo visualization
+noremap <leader>tu :GundoToggle<CR>
+
 " NERDTree options
 let NERDTreeShowBookmarks=1
 nmap <leader>n :lcd %:p:h<CR>:NERDTreeToggle<CR>
@@ -427,3 +430,4 @@ function! LBDBCompleteFn(findstart, base)
     endif
 endfun
 autocmd FileType mail set completefunc=LBDBCompleteFn
+
