@@ -141,7 +141,7 @@ vnoremap / /\v
 " applies substitutions globally on lines
 set gdefault
 
-" handle long lines 
+" handle long lines
 set wrap
 set textwidth=79
 set formatoptions=qrn1
@@ -173,19 +173,30 @@ inoremap <C-U> <C-G>u<C-U>
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
+  " shift+L for searching http://vim.wikia.com/wiki/Searching
+  set mousemodel=extend
 endif
 
-" turn on 256 colors in terminal
+" Switch syntax highlighting on
+syntax on
+
+" turn on 256 colors in terminal on dark background
 set t_Co=256
-colorscheme transparent
+set background=dark
+"set background=light
+
+"let g:solarized_termcolors=16
+let g:solarized_termcolors=256
+"let g:solarized_visibility="high"
+colorscheme solarized
+"autocmd FileType mail colorscheme transparent
+
+"colorscheme transparent
+"colorscheme wombat256
 "colorscheme darkzen
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
+" switch on highlighting the last used search pattern.
+set hlsearch
 
 " for tex files only: swich working directory according to to file
 autocmd FileType tex lcd %:p:h
@@ -232,7 +243,7 @@ endif
 
 "{{{Taglist configuration
 " *t*oggle *o*utline
-nnoremap <leader>to :TlistToggle<cr>
+nmap <leader>to :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 1
@@ -253,7 +264,6 @@ nnoremap <leader>v V`]
 
 " use an additional ESC key in insert and visual mode
 inoremap jj <ESC>
-vnoremap jj <ESC>
 inoremap ZZ <ESC>:wq!<CR>
 
 " open a new vertical split and switch over to it
@@ -284,8 +294,11 @@ endfunction
 map <Leader>b :call Browser ()<CR>
 "}}}
 
-" Space will toggle folds!
-" nnoremap <space> za
+" Space +/- will toggle folds / down/up is next/prev fold
+nmap <leader>+ zo
+nmap <leader>- zc
+nmap <leader><down> zj
+nmap <leader><up> zk
 
 " remap tab switch commands
 nmap <leader><right> :tabnext<CR>
@@ -341,6 +354,7 @@ nmap <leader>sd :set spelllang=de_20<CR>
 " turn on wrap for e.g. tex files
 command! -nargs=* Wrap set wrap linebreak nolist
 autocmd FileType tex Wrap
+autocmd FileType markdown Wrap
 
 " handy uppercase commands for german keyboards (: is used with shift)
 command! -nargs=* Q q
@@ -361,11 +375,13 @@ nmap <down> gj
 "let g:DisableAutoPHPFolding = 1
 
 " toggle graphical undo visualization
-noremap <leader>tu :GundoToggle<CR>
+nmap <leader>tu :GundoToggle<CR>
 
 " NERDTree options
 let NERDTreeShowBookmarks=1
 nmap <leader>n :lcd %:p:h<CR>:NERDTreeToggle<CR>
+nmap <leader>nn :lcd %:p:h<CR>:NERDTreeToggle<CR>
+nmap <leader>nm :NERDTreeMirror<CR>
 
 " MRU options
 let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
@@ -430,4 +446,38 @@ function! LBDBCompleteFn(findstart, base)
     endif
 endfun
 autocmd FileType mail set completefunc=LBDBCompleteFn
+
+" Markdown (no need for modula2 :)
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd FileType markdown nmap <leader>m :Mm<CR>
+
+" Precise Jump shortcut
+nmap <leader><leader> _f
+
+" go/change working directory - (g|G)o (f = file, r = root, h = home)
+nmap <leader>gf :lcd %:p:h<CR>:pwd<CR>
+nmap <leader>Gf :cd %:p:h<CR>:pwd<CR>
+nmap <leader>gr :lcd `hg root`<CR>:pwd<CR>
+nmap <leader>Gr :cd `hg root`<CR>:pwd<CR>
+nmap <leader>gh :lcd $HOME<CR>:pwd<CR>
+nmap <leader>Gh :cd $HOME<CR>:pwd<CR>
+
+" PHP Specific options
+" http://stackoverflow.com/questions/5130406/how-to-i-display-results-of-phpcs-in-vim
+let php_sql_query=1     " Highlight sql in php strings
+let php_htmlInStrings=1 " Highlight HTML in php strings
+let php_noShortTags=1   " Disable PHP Short Tags
+let php_folding=1       " Enable Ability to FOLD html Code
+
+function! RunPhpcs()
+    let l:filename=@%
+    let l:phpcs_output=system('phpcs --report=csv --standard=Zend '.l:filename)
+    let l:phpcs_list=split(l:phpcs_output, "\n")
+    unlet l:phpcs_list[0]
+    cexpr l:phpcs_list
+    cwindow
+endfunction
+
+set errorformat+=\"%f\"\\,%l\\,%c\\,%t%*[a-zA-Z]\\,\"%m\"
+command! Phpcs execute RunPhpcs()
 
