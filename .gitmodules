@@ -1,0 +1,93 @@
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = git://github.com/vim-scripts/ack.vim.git
+[submodule "bundle/Command-T"]
+	path = bundle/Command-T
+	url = git://github.com/vim-scripts/Command-T.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
+[submodule "bundle/lbdbq"]
+	path = bundle/lbdbq
+	url = git://github.com/vim-scripts/lbdbq.git
+[submodule "bundle/Mail_Sig.set"]
+	path = bundle/Mail_Sig.set
+	url = git://github.com/vim-scripts/Mail_Sig.set.git
+[submodule "bundle/md5"]
+	path = bundle/md5
+	url = git://github.com/vim-scripts/md5.vim.git
+[submodule "bundle/mru"]
+	path = bundle/mru
+	url = git://github.com/vim-scripts/mru.vim.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/php_getset"]
+	path = bundle/php_getset
+	url = git://github.com/vim-scripts/php_getset.vim.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/syntaxconkyrc"]
+	path = bundle/syntaxconkyrc
+	url = git://github.com/vim-scripts/syntaxconkyrc.vim.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/TeX-PDF"]
+	path = bundle/TeX-PDF
+	url = git://github.com/vim-scripts/TeX-PDF.git
+[submodule "bundle/uri-ref"]
+	path = bundle/uri-ref
+	url = git://github.com/vim-scripts/uri-ref.git
+[submodule "bundle/vcscommand"]
+	path = bundle/vcscommand
+	url = git://repo.or.cz/vcscommand.git
+[submodule "bundle/checksyntax"]
+	path = bundle/checksyntax
+	url = git://github.com/tomtom/checksyntax_vim.git
+[submodule "bundle/CSS-one-line--multi-line-folding"]
+	path = bundle/CSS-one-line--multi-line-folding
+	url = git://github.com/vim-scripts/CSS-one-line--multi-line-folding.git
+[submodule "bundle/cscope-quickfix"]
+	path = bundle/cscope-quickfix
+	url = git://github.com/vim-scripts/cscope-quickfix.git
+[submodule "bundle/jslint"]
+	path = bundle/jslint
+	url = git://github.com/hallettj/jslint.vim.git
+[submodule "bundle/liquid"]
+	path = bundle/liquid
+	url = git://github.com/vim-scripts/liquid.vim.git
+[submodule "bundle/phpfolding"]
+	path = bundle/phpfolding
+	url = git://github.com/vim-scripts/phpfolding.vim.git
+[submodule "bundle/php.vim--Garvin"]
+	path = bundle/php.vim--Garvin
+	url = git://github.com/vim-scripts/php.vim--Garvin.git
+[submodule "bundle/PreciseJump"]
+	path = bundle/PreciseJump
+	url = git://github.com/vim-scripts/PreciseJump.git
+[submodule "bundle/searchfold"]
+	path = bundle/searchfold
+	url = git://github.com/vim-scripts/searchfold.vim.git
+[submodule "bundle/semweb"]
+	path = bundle/semweb
+	url = git@github.com:seebi/semweb.vim.git
+[submodule "bundle/TwitVim"]
+	path = bundle/TwitVim
+	url = git://github.com/vim-scripts/TwitVim.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
