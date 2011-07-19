@@ -61,9 +61,6 @@
 [submodule "bundle/CSS-one-line--multi-line-folding"]
 	path = bundle/CSS-one-line--multi-line-folding
 	url = git://github.com/vim-scripts/CSS-one-line--multi-line-folding.git
-[submodule "bundle/cscope-quickfix"]
-	path = bundle/cscope-quickfix
-	url = git://github.com/vim-scripts/cscope-quickfix.git
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = git://github.com/hallettj/jslint.vim.git
