@@ -457,8 +457,8 @@ nmap <leader><leader> _f
 " go/change working directory - (g|G)o (f = file, r = root, h = home)
 nmap <leader>gf :lcd %:p:h<CR>:pwd<CR>
 nmap <leader>Gf :cd %:p:h<CR>:pwd<CR>
-nmap <leader>gr :lcd `hg root`<CR>:pwd<CR>
-nmap <leader>Gr :cd `hg root`<CR>:pwd<CR>
+nmap <leader>gr :lcd `$HOME/.vim/scripts/vcsroot.sh`<CR>:pwd<CR>
+nmap <leader>Gr :cd `$HOME/.vim/scripts/vcsroot.sh`<CR>:pwd<CR>
 nmap <leader>gh :lcd $HOME<CR>:pwd<CR>
 nmap <leader>Gh :cd $HOME<CR>:pwd<CR>
 
