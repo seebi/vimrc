@@ -241,18 +241,9 @@ endif
 
 " LEADER COMMANDS
 
-"{{{Taglist configuration
+"{{{Tagbar configuration
 " *t*oggle *o*utline
-nmap <leader>to :TlistToggle<CR>
-let Tlist_Use_Right_Window = 1
-let Tlist_Enable_Fold_Column = 0
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Use_SingleClick = 1
-let Tlist_Inc_Winwidth = 0
-let Tlist_Close_On_Select = 0
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Display_Tag_Scope = 1
-let tlist_tex_settings='latex;s:section;c:chapter;b:bibitem;c:command;l:label;r:ref'
+nmap <leader>to :TagbarToggle<CR>
 "}}}
 
 
@@ -332,7 +323,7 @@ nmap <leader>j Qip<CR>
 " for mails only: format is based on highlightning
 autocmd FileType MAIL nmap <leader>j Qiy<CR>
 autocmd FileType mail setlocal spell
-autocmd FileType mail setlocal spelllang=de_20
+autocmd FileType mail setlocal spelllang=de_20,en_gb
 nmap <C-J> Qipj<CR>
 
 "{{{ prepare mail texts
@@ -480,4 +471,5 @@ endfunction
 
 set errorformat+=\"%f\"\\,%l\\,%c\\,%t%*[a-zA-Z]\\,\"%m\"
 command! Phpcs execute RunPhpcs()
+
 
