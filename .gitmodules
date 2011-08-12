@@ -91,3 +91,33 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/repeat.vim"]
+	path = bundle/repeat.vim
+	url = https://github.com/vim-scripts/repeat.vim.git
+[submodule "bundle/speeddating.vim"]
+	path = bundle/speeddating.vim
+	url = https://github.com/vim-scripts/speeddating.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/utl.vim"]
+	path = bundle/utl.vim
+	url = https://github.com/vim-scripts/utl.vim.git
+[submodule "bundle/vim-orgmode"]
+	path = bundle/vim-orgmode
+	url = https://github.com/jceb/vim-orgmode.git
+[submodule "bundle/vim-textobj-fold"]
+	path = bundle/vim-textobj-fold
+	url = git://github.com/kana/vim-textobj-fold.git
+[submodule "bundle/vim-textobj-indent"]
+	path = bundle/vim-textobj-indent
+	url = git://github.com/kana/vim-textobj-indent.git
+[submodule "bundle/vim-textobj-syntax"]
+	path = bundle/vim-textobj-syntax
+	url = git://github.com/kana/vim-textobj-syntax.git
+[submodule "bundle/vim-textobj-user"]
+	path = bundle/vim-textobj-user
+	url = git://github.com/kana/vim-textobj-user.git
