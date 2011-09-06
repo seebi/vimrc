@@ -121,3 +121,12 @@
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
 	url = git://github.com/kana/vim-textobj-user.git
+[submodule "bundle/ScmFrontEnd-former-name--MinSCM"]
+	path = bundle/ScmFrontEnd-former-name--MinSCM
+	url = https://github.com/vim-scripts/ScmFrontEnd-former-name--MinSCM.git
+[submodule "bundle/easychair"]
+	path = bundle/easychair
+	url = git@github.com:seebi/easychair.vim.git
+[submodule "bundle/vim-gnupg"]
+	path = bundle/vim-gnupg
+	url = git://gitorious.org/vim-gnupg/vim-gnupg.git
