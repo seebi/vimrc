@@ -130,3 +130,9 @@
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = git://gitorious.org/vim-gnupg/vim-gnupg.git
+[submodule "bundle/vim-ragtag"]
+	path = bundle/vim-ragtag
+	url = git://github.com/tpope/vim-ragtag.git
+[submodule "bundle/vim-session"]
+	path = bundle/vim-session
+	url = git://github.com/xolox/vim-session.git
