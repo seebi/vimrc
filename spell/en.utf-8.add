@@ -29,7 +29,6 @@ facebook
 Skype
 DSSN
 WebID
-Pubsubhubbub
 pingback
 Triplify
 SPARQL
@@ -66,5 +65,8 @@ URIs
 namespaces
 datatype
 setup
-B
-C
+markup
+CKAN
+vim
+VoID
+SIOC
