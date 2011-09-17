@@ -191,9 +191,19 @@ let g:solarized_termcolors=256
 colorscheme solarized
 "autocmd FileType mail colorscheme transparent
 
-"colorscheme transparent
-"colorscheme wombat256
-"colorscheme darkzen
+"{{{ Toggle dark/light background for solarized
+nmap <leader>tb :call ToggleSolarized()<CR>
+function! ToggleSolarized()
+    if &background == "dark"
+        set background=light
+        colorscheme solarized
+    else
+        set background=dark
+        colorscheme solarized
+    endif
+endfunc
+"}}}
+
 
 " switch on highlighting the last used search pattern.
 set hlsearch
@@ -301,6 +311,7 @@ nmap <leader>rc :tabedit $MYVIMRC<CR>
 
 " faster exit
 nmap <leader>q :q<CR>
+nmap <leader>Q :qa<CR>
 
 " faster saving
 nnoremap <leader>w :w<CR>
@@ -471,5 +482,11 @@ endfunction
 
 set errorformat+=\"%f\"\\,%l\\,%c\\,%t%*[a-zA-Z]\\,\"%m\"
 command! Phpcs execute RunPhpcs()
+
+" vim session config
+" https://github.com/xolox/vim-session
+let g:session_autoload="no"
+let g:session_default_to_last=0
+let g:session_autosave="no"
 
 
