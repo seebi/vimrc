@@ -67,6 +67,7 @@ set wildignore+=*.jpg,*.png,*.tiff
 
 set visualbell      " no beep but visual bell
 set cursorline      " Highlight the screen line of the cursor
+set cursorcolumn      " Highlight the screen column of the cursor
 set ttyfast         " Indicates a fast terminal connection.
 set ruler           " Show the line and column number of the cursor position
 set laststatus=2    " = always
