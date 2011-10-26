@@ -1,4 +1,4 @@
-for dir in `git st bundle | grep "??" | cut -d " " -f 2`;
+for dir in `git status -sb bundle | grep "??" | cut -d " " -f 2`;
 do
     cd $dir;
     remote=`git remote show origin | grep Fetch | cut -d " " -f 5`;
