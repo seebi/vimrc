@@ -40,9 +40,9 @@ set guifont=Inconsolata\ Medium\ 16
 set backspace=indent,eol,start
 
 if has("vms")
-  set nobackup      " do not keep a backup file, use versions instead
+    set nobackup      " do not keep a backup file, use versions instead
 else
-  set backup        " keep a backup file
+    set backup        " keep a backup file
 endif
 
 set scrolloff=99    " Minimal number of screen lines to keep above and below the cursor
@@ -75,44 +75,44 @@ set laststatus=2
 
 " Status line
 "set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
-set statusline=
-set statusline+=%-3.3n\                         " buffer number
-set statusline+=%f\                             " filename
-set statusline+=%h%m%r%w                        " status flags
-set statusline+=\[%{strlen(&ft)?&ft:'none'}]    " file type
-set statusline+=%=                              " right align remainder
-set statusline+=0x%-8B                          " character value
-set statusline+=%-14(%l,%c%V%)                  " line, character
-set statusline+=%<%P                            " file position
+"set statusline=
+"set statusline+=%-3.3n\                         " buffer number
+"set statusline+=%f\                             " filename
+"set statusline+=%h%m%r%w                        " status flags
+"set statusline+=\[%{strlen(&ft)?&ft:'none'}]    " file type
+"set statusline+=%=                              " right align remainder
+"set statusline+=0x%-8B                          " character value
+"set statusline+=%-14(%l,%c%V%)                  " line, character
+"set statusline+=%<%P                            " file position
 
 "{{{ Tab line -- refer ':help setting-guitablabel'
 if v:version >= 700
 
-function! GuiTabLabel()
-    let label = ''
-    let bufnrlist = tabpagebuflist(v:lnum)
+    function! GuiTabLabel()
+        let label = ''
+        let bufnrlist = tabpagebuflist(v:lnum)
 
-    " Add '+' if one of the buffers in the tab page is modified
-    for bufnr in bufnrlist
-        if getbufvar(bufnr, '&modified')
-            let label = '[+] '
-            break
+        " Add '+' if one of the buffers in the tab page is modified
+        for bufnr in bufnrlist
+            if getbufvar(bufnr, '&modified')
+                let label = '[+] '
+                break
+            endif
+        endfor
+
+        " Append the number of windows in the tab page if more than one
+        let wincount = tabpagewinnr(v:lnum, '$')
+        if wincount > 1
+            let label .= wincount
         endif
-    endfor
+        if label != ''
+            let label .= ' '
+        endif
 
-    " Append the number of windows in the tab page if more than one
-    let wincount = tabpagewinnr(v:lnum, '$')
-    if wincount > 1
-        let label .= wincount
-    endif
-    if label != ''
-        let label .= ' '
-    endif
+        return label
 
-    return label
-
-endfunction
-set guitablabel=%{GuiTabLabel()}\ %t
+    endfunction
+    set guitablabel=%{GuiTabLabel()}\ %t
 endif
 "}}} v:version >= 700
 
@@ -173,9 +173,9 @@ inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
-  set mouse=a
-  " shift+L for searching http://vim.wikia.com/wiki/Searching
-  set mousemodel=extend
+    set mouse=a
+    " shift+L for searching http://vim.wikia.com/wiki/Searching
+    set mousemodel=extend
 endif
 
 " Switch syntax highlighting on
@@ -214,39 +214,35 @@ autocmd FileType tex lcd %:p:h
 
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
-au!
+    au!
 
-" For all text files set 'textwidth' to 78 characters.
-autocmd FileType text setlocal textwidth=78
+    " For all text files set 'textwidth' to 78 characters.
+    autocmd FileType text setlocal textwidth=78
 
-" no line numbering in the outlook window
-autocmd FileType taglist setlocal norelativenumber
+    " no line numbering in the outlook window
+    autocmd FileType taglist setlocal norelativenumber
 
-" When editing a file, always jump to the last known cursor position.
-" Don't do it when the position is invalid or when inside an event
-" handler (happens when dropping a file on gvim). Also don't do it when
-" the mark is in the first line, that is the default position when
-" opening a file.
-autocmd BufReadPost *
-\ if line("'\"") > 1 && line("'\"") <= line("$") |
-\   exe "normal! g`\"" |
-\ endif
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid or when inside an event
+    " handler (happens when dropping a file on gvim). Also don't do it when
+    " the mark is in the first line, that is the default position when
+    " opening a file.
+    autocmd BufReadPost *
+                \ if line("'\"") > 1 && line("'\"") <= line("$") |
+                \   exe "normal! g`\"" |
+                \ endif
 
 augroup END
 
 " vimrc_on_the_fly from vimcasts
 autocmd bufwritepost .vimrc source $MYVIMRC
 
-" save files with +x when a shebang is found on line 1
-" http://www.commandlinefu.com/commands/view/7039/vi-config-to-save-files-with-x-when-a-shebang-is-found-on-line-1
-"au BufWritePost * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent !chmod +x <afile> | endif | endif
-
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
 if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+    command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+                \ | wincmd p | diffthis
 endif
 
 
@@ -279,10 +275,10 @@ nnoremap <left> <BS>
 " http://vimcasts.org/episodes/creating-colorschemes-for-vim/
 nmap <C-S-P> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+    if !exists("*synstack")
+        return
+    endif
+    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 "}}}
 
@@ -319,7 +315,7 @@ nnoremap <leader>w :w<CR>
 
 " Indent XML readably
 function! DoPrettyXML()
-  1,$!xmllint --format --recover -
+    1,$!xmllint --format --recover -
 endfunction
 command! PrettyXML call DoPrettyXML()
 
@@ -490,4 +486,9 @@ let g:session_autoload="no"
 let g:session_default_to_last=0
 let g:session_autosave="no"
 
+" syntastic options
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list=2
+"let g:syntastic_quiet_warnings=1
 
