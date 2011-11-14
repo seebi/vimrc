@@ -492,3 +492,7 @@ let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=2
 "let g:syntastic_quiet_warnings=1
 
+" CheckAttach
+let g:checkattach_filebrowser='ranger'
+let g:checkattach_once='y'
+
