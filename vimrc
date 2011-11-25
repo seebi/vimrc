@@ -117,10 +117,12 @@ endif
 "}}} v:version >= 700
 
 
-" Show the line number relative to the line with the cursor
-set relativenumber
-" toggle numbers (e.g. for copy and paste to another window)
-nmap <leader>tn :set relativenumber!<CR>
+if v:version >= 7.3
+    " Show the line number relative to the line with the cursor
+    set relativenumber
+    " toggle numbers (e.g. for copy and paste to another window)
+    nmap <leader>tn :set relativenumber!<CR>
+endif
 
 set undofile        " new feature of undo files
 set undodir=/home/seebi/.vim/undos
