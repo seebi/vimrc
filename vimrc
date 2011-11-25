@@ -117,15 +117,19 @@ endif
 "}}} v:version >= 700
 
 
-if v:version >= 7.3
+"{{{ 7.3 features
+if v:version >= 703
     " Show the line number relative to the line with the cursor
     set relativenumber
     " toggle numbers (e.g. for copy and paste to another window)
     nmap <leader>tn :set relativenumber!<CR>
-endif
 
-set undofile        " new feature of undo files
-set undodir=/home/seebi/.vim/undos
+    set undofile        " new feature of undo files
+    set undodir=/home/seebi/.vim/undos
+
+    set colorcolumn=85
+endif
+"}}} v:version >= 703
 
 " no more backupfiles in the same directory
 set backupdir=/home/seebi/.vim/backups
@@ -148,7 +152,6 @@ set gdefault
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
 
 " show invisible chars (*t*oggle *l*ist)
 nmap <leader>tl :set list!<CR>
