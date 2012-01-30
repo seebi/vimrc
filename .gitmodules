@@ -157,6 +157,3 @@
 [submodule "bundle/vim-statline"]
 	path = bundle/vim-statline
 	url = git://github.com/millermedeiros/vim-statline.git
-[submodule "bundle/voom"]
-	path = bundle/voom
-	url = https://github.com/vim-scripts/VOoM.git
