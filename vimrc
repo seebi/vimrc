@@ -34,7 +34,7 @@ set expandtab
 " gvim font
 "set guifont=Monospace\ 14
 "set guifont=Monaco\ 14
-set guifont=Inconsolata\ Medium\ 16
+set guifont=Inconsolata\ Medium\ 18
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -254,6 +254,7 @@ endif
 " LEADER COMMANDS
 
 "{{{Tagbar configuration
+let g:tagbar_autoclose = 1
 " *t*oggle *o*utline
 nmap <leader>to :TagbarToggle<CR>
 "}}}
@@ -330,7 +331,7 @@ nmap <leader>vd :VCSDiff<CR>
 nmap <leader>vl :VCSLog<CR>
 
 " format stuff, nano emulation:)
-set formatprg=par\ q
+"set formatprg=par\ q
 nmap <leader>j Qip<CR>
 
 " for mails only: format is based on highlightning
@@ -388,7 +389,7 @@ nmap <leader>nn :lcd %:p:h<CR>:NERDTreeToggle<CR>
 nmap <leader>nm :NERDTreeMirror<CR>
 
 " MRU options
-let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
+let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*|COMMIT_EDITMSG$'
 let MRU_File = '/home/seebi/.vim/mru_files'
 nmap <leader>l :MRU<CR>
 
@@ -453,7 +454,7 @@ autocmd FileType mail set completefunc=LBDBCompleteFn
 
 " Markdown (no need for modula2 :)
 autocmd BufRead,BufNewFile *.md set filetype=markdown
-autocmd FileType markdown nmap <leader>m :Mm<CR>
+autocmd FileType markdown nmap <leader>m :silent !viewMarkdown.sh %<CR>
 
 " Precise Jump shortcut
 nmap <leader><leader> _f
@@ -496,6 +497,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=2
 "let g:syntastic_quiet_warnings=1
+let g:syntastic_phpcs_disable = 1
 
 " CheckAttach
 let g:checkattach_filebrowser='ranger'
