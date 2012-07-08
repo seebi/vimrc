@@ -6,4 +6,5 @@ snippets/*
 mru_files
 bundle.bak
 .netrwhist
+*.private
 ruby/command-t/ext.so

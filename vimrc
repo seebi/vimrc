@@ -503,3 +503,5 @@ let g:syntastic_phpcs_disable = 1
 let g:checkattach_filebrowser='ranger'
 let g:checkattach_once='y'
 
+" source my private vimrc
+source /home/seebi/.vim/vimrc.private
