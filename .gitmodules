@@ -160,3 +160,15 @@
 [submodule "bundle/voom"]
 	path = bundle/voom
 	url = git://github.com/vim-scripts/VOoM.git
+[submodule "bundle/Align"]
+	path = bundle/Align
+	url = git://github.com/vim-scripts/Align.git
+[submodule "bundle/swapit"]
+	path = bundle/swapit
+	url = git://github.com/mjbrownie/swapit.git
+[submodule "bundle/tracwiki"]
+	path = bundle/tracwiki
+	url = git://github.com/vim-scripts/tracwiki.git
+[submodule "bundle/vitra"]
+	path = bundle/vitra
+	url = git://github.com/nsmgr8/vitra.git
