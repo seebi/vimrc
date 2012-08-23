@@ -172,3 +172,6 @@
 [submodule "bundle/vitra"]
 	path = bundle/vitra
 	url = git://github.com/nsmgr8/vitra.git
+[submodule "bundle/vim-dict"]
+	path = bundle/vim-dict
+	url = git://github.com/szw/vim-dict.git

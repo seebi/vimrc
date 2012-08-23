@@ -1,5 +1,5 @@
 " based on the example vimrc file as well as
-
+" 
 " - http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 " - http://stackoverflow.com/questions/164847/what-is-in-your-vimrc
 " - http://weierophinney.net/matthew/archives/249-Vim-Toolbox,-2010-Edition.html
@@ -125,17 +125,17 @@ if v:version >= 703
     nmap <leader>tn :set relativenumber!<CR>
 
     set undofile        " new feature of undo files
-    set undodir=/home/seebi/.vim/undos
+    set undodir="/Users/seebi/.vim/undos"
 
     set colorcolumn=85
 endif
 "}}} v:version >= 703
 
 " no more backupfiles in the same directory
-set backupdir=/home/seebi/.vim/backups
+set backupdir=/Users/seebi/.vim/backups
 
 " no more swapfiles in the same directory
-set directory=/home/seebi/.vim/swap
+set directory=/Users/seebi/.vim/swap
 
 " case-sensitive search intelligently
 set ignorecase
@@ -156,7 +156,7 @@ set formatoptions=qrn1
 " show invisible chars (*t*oggle *l*ist)
 nmap <leader>tl :set list!<CR>
 set list
-set listchars=tab:▸\ ,eol:¬,trail:·,extends:↷,precedes:↶
+set listchars=nbsp:•,tab:▸\ ,eol:¬,trail:·,extends:↷,precedes:↶
 
 " Stifle many interruptive "Hit Enter" prompts
 set shortmess=atI
@@ -292,7 +292,7 @@ endfunc
 function! Browser ()
     let line = getline (".")
     let line = matchstr (line, "http[^   ]*")
-    exec "!/home/seebi/bin/scripts/browser.sh ".line
+    exec "!/Users/seebi/bin/scripts/browser.sh ".line
 endfunction
 " Open Url on this line with the browser \w
 map <Leader>b :call Browser ()<CR>
@@ -390,14 +390,14 @@ nmap <leader>nm :NERDTreeMirror<CR>
 
 " MRU options
 let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*|COMMIT_EDITMSG$'
-let MRU_File = '/home/seebi/.vim/mru_files'
+let MRU_File = "/Users/seebi/.vim/mru_files"
 nmap <leader>l :MRU<CR>
 
 " Snippets
 function! OpenSnippetsForCurrentFile ()
     let filetype = &filetype
-    "tabedit "/home/seebi/.vim/snippets/" . filetype
-    tabedit /home/seebi/.vim/snippets
+    "tabedit "/Users/seebi/.vim/snippets/" . filetype
+    tabedit "/Users/seebi/.vim/snippets"
 endfunction
 
 nmap <leader>rs :call OpenSnippetsForCurrentFile()<CR>
@@ -462,8 +462,8 @@ nmap <leader><leader> _f
 " go/change working directory - (g|G)o (f = file, r = root, h = home)
 nmap <leader>gf :lcd %:p:h<CR>:pwd<CR>
 nmap <leader>Gf :cd %:p:h<CR>:pwd<CR>
-nmap <leader>gr :lcd `$HOME/.vim/scripts/vcsroot.sh`<CR>:pwd<CR>
-nmap <leader>Gr :cd `$HOME/.vim/scripts/vcsroot.sh`<CR>:pwd<CR>
+nmap <leader>gr :lcd "/Users/seebi/.vim/scripts/vcsroot.sh"<CR>:pwd<CR>
+nmap <leader>Gr :cd "/Users/seebi/.vim/scripts/vcsroot.sh"<CR>:pwd<CR>
 nmap <leader>gh :lcd $HOME<CR>:pwd<CR>
 nmap <leader>Gh :cd $HOME<CR>:pwd<CR>
 
@@ -504,4 +504,4 @@ let g:checkattach_filebrowser='ranger'
 let g:checkattach_once='y'
 
 " source my private vimrc
-source /home/seebi/.vim/vimrc.private
+source /Users/seebi/.vim/vimrc.private
