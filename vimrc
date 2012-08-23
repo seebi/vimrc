@@ -125,17 +125,17 @@ if v:version >= 703
     nmap <leader>tn :set relativenumber!<CR>
 
     set undofile        " new feature of undo files
-    set undodir="/Users/seebi/.vim/undos"
+    set undodir=$HOME/.vim/undos
 
     set colorcolumn=85
 endif
 "}}} v:version >= 703
 
 " no more backupfiles in the same directory
-set backupdir=/Users/seebi/.vim/backups
+set backupdir=$HOME/.vim/backups
 
 " no more swapfiles in the same directory
-set directory=/Users/seebi/.vim/swap
+set directory=$HOME/.vim/swap
 
 " case-sensitive search intelligently
 set ignorecase
@@ -292,7 +292,7 @@ endfunc
 function! Browser ()
     let line = getline (".")
     let line = matchstr (line, "http[^   ]*")
-    exec "!/Users/seebi/bin/scripts/browser.sh ".line
+    exec "!~/bin/scripts/browser.sh ".line
 endfunction
 " Open Url on this line with the browser \w
 map <Leader>b :call Browser ()<CR>
@@ -390,14 +390,14 @@ nmap <leader>nm :NERDTreeMirror<CR>
 
 " MRU options
 let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*|COMMIT_EDITMSG$'
-let MRU_File = "/Users/seebi/.vim/mru_files"
+let MRU_File=$HOME . '/.vim/mru_files'
 nmap <leader>l :MRU<CR>
 
 " Snippets
 function! OpenSnippetsForCurrentFile ()
     let filetype = &filetype
-    "tabedit "/Users/seebi/.vim/snippets/" . filetype
-    tabedit "/Users/seebi/.vim/snippets"
+    "tabedit "~/.vim/snippets/" . filetype
+    tabedit $HOME/.vim/snippets
 endfunction
 
 nmap <leader>rs :call OpenSnippetsForCurrentFile()<CR>
@@ -462,8 +462,8 @@ nmap <leader><leader> _f
 " go/change working directory - (g|G)o (f = file, r = root, h = home)
 nmap <leader>gf :lcd %:p:h<CR>:pwd<CR>
 nmap <leader>Gf :cd %:p:h<CR>:pwd<CR>
-nmap <leader>gr :lcd "/Users/seebi/.vim/scripts/vcsroot.sh"<CR>:pwd<CR>
-nmap <leader>Gr :cd "/Users/seebi/.vim/scripts/vcsroot.sh"<CR>:pwd<CR>
+nmap <leader>gr :lcd $HOME/.vim/scripts/vcsroot.sh<CR>:pwd<CR>
+nmap <leader>Gr :cd $HOME/.vim/scripts/vcsroot.sh<CR>:pwd<CR>
 nmap <leader>gh :lcd $HOME<CR>:pwd<CR>
 nmap <leader>Gh :cd $HOME<CR>:pwd<CR>
 
@@ -504,4 +504,4 @@ let g:checkattach_filebrowser='ranger'
 let g:checkattach_once='y'
 
 " source my private vimrc
-source /Users/seebi/.vim/vimrc.private
+source $HOME/.vim/vimrc.private
