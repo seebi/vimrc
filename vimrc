@@ -22,7 +22,8 @@ set nocompatible
 
 " prevents some security exploits having to do with modelines in files
 " http://lists.alioth.debian.org/pipermail/pkg-vim-maintainers/2007-June/004020.html
-"set modelines=0
+set modeline
+set modelines=4
 
 " http://vimcasts.org/episodes/tabs-and-spaces/
 " 4 spaces expanded and backspace deletes 4 spaces too
@@ -216,6 +217,8 @@ set hlsearch
 
 " for tex files only: swich working directory according to to file
 autocmd FileType tex lcd %:p:h
+
+autocmd FileType tex setlocal foldmethod=marker
 
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
