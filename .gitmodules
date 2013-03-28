@@ -166,9 +166,9 @@
 [submodule "bundle/tracwiki"]
 	path = bundle/tracwiki
 	url = git://github.com/vim-scripts/tracwiki.git
-[submodule "bundle/vitra"]
-	path = bundle/vitra
-	url = git://github.com/nsmgr8/vitra.git
 [submodule "bundle/vim-dict"]
 	path = bundle/vim-dict
 	url = git://github.com/szw/vim-dict.git
+[submodule "bundle/vim-visual-star-search"]
+	path = bundle/vim-visual-star-search
+	url = git://github.com/nelstrom/vim-visual-star-search.git
