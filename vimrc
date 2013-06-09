@@ -387,12 +387,14 @@ nmap <leader>tu :GundoToggle<CR>
 
 " NERDTree options
 let NERDTreeShowBookmarks=1
+let NERDTreeIgnore=['\.aux$', '\.log$']
 nmap <leader>n :lcd %:p:h<CR>:NERDTreeToggle<CR>
 nmap <leader>nn :lcd %:p:h<CR>:NERDTreeToggle<CR>
 nmap <leader>nm :NERDTreeMirror<CR>
 
 " MRU options
-let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*|COMMIT_EDITMSG$'
+let MRU_Max_Entries=1000
+let MRU_Exclude_Files='^/tmp/.*\|^/var/tmp/.*\|mutt-soljaris14.*\|COMMIT_EDITMSG$'
 let MRU_File=$HOME . '/.vim/mru_files'
 nmap <leader>l :MRU<CR>
 
@@ -458,6 +460,9 @@ autocmd FileType mail set completefunc=LBDBCompleteFn
 " Markdown (no need for modula2 :)
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd FileType markdown nmap <leader>m :silent !viewMarkdown.sh %<CR>
+
+" http://vim.wikia.com/wiki/Editing_crontab
+set backupskip=/tmp/*,/private/tmp/*
 
 " Precise Jump shortcut
 nmap <leader><leader> _f
