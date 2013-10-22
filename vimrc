@@ -262,6 +262,7 @@ let g:tagbar_autoclose = 1
 nmap <leader>to :TagbarToggle<CR>
 "}}}
 
+nmap <leader>tq :cwindow<CR>
 
 " fold HTML tag
 nnoremap <leader>ft Vatzf
@@ -310,7 +311,8 @@ nmap <leader><up> zk
 " remap tab switch commands
 nmap <leader><right> :tabnext<CR>
 nmap <leader><left> :tabprevious<CR>
-nmap <leader><Return> :tabnew<CR>
+"nmap <leader><Return> :tabnew<CR>
+nmap <leader><Return> :Thumbnail<CR>
 
 " edit vimrc on the fly
 nmap <leader>rc :tabedit $MYVIMRC<CR>
@@ -387,14 +389,14 @@ nmap <leader>tu :GundoToggle<CR>
 
 " NERDTree options
 let NERDTreeShowBookmarks=1
-let NERDTreeIgnore=['\.aux$', '\.log$']
+let NERDTreeIgnore=['\.aux$', '\.log$', '\.lof', '\.lol', '\.lot']
 nmap <leader>n :lcd %:p:h<CR>:NERDTreeToggle<CR>
 nmap <leader>nn :lcd %:p:h<CR>:NERDTreeToggle<CR>
 nmap <leader>nm :NERDTreeMirror<CR>
 
 " MRU options
 let MRU_Max_Entries=1000
-let MRU_Exclude_Files='^/tmp/.*\|^/var/tmp/.*\|mutt-soljaris14.*\|COMMIT_EDITMSG$'
+let MRU_Exclude_Files='^/tmp/.*\|^.*tmp$|^/var/tmp/.*\|mutt-soljaris14.*\|^COMMIT_EDITMSG$|^MERGE_MSG$'
 let MRU_File=$HOME . '/.vim/mru_files'
 nmap <leader>l :MRU<CR>
 
@@ -502,7 +504,7 @@ let g:session_autosave="no"
 
 " syntastic options
 let g:syntastic_enable_signs=1
-let g:syntastic_auto_jump=1
+let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=2
 "let g:syntastic_quiet_warnings=1
 let g:syntastic_phpcs_disable = 1

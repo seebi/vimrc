@@ -175,3 +175,9 @@
 [submodule "bundle/fakeclip"]
 	path = bundle/fakeclip
 	url = git://github.com/kana/vim-fakeclip.git
+[submodule "bundle/sparqlify.vim"]
+	path = bundle/sparqlify.vim
+	url = https://github.com/patrickwestphal/sparqlify.vim
+[submodule "bundle/vim-pandoc"]
+	path = bundle/vim-pandoc
+	url = git@github.com:vim-pandoc/vim-pandoc.git
