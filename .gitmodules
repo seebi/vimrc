@@ -181,3 +181,18 @@
 [submodule "bundle/vim-pandoc"]
 	path = bundle/vim-pandoc
 	url = git@github.com:vim-pandoc/vim-pandoc.git
+[submodule "bundle/Dockerfile.vim"]
+	path = bundle/Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "bundle/applescript.vim"]
+	path = bundle/applescript.vim
+	url = https://github.com/vim-scripts/applescript.vim.git
+[submodule "bundle/dash.vim"]
+	path = bundle/dash.vim
+	url = https://github.com/rizzatti/dash.vim.git
+[submodule "bundle/funcoo.vim"]
+	path = bundle/funcoo.vim
+	url = https://github.com/rizzatti/funcoo.vim.git
+[submodule "bundle/wildfire.vim"]
+	path = bundle/wildfire.vim
+	url = https://github.com/gcmt/wildfire.vim.git

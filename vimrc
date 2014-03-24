@@ -396,7 +396,7 @@ nmap <leader>nm :NERDTreeMirror<CR>
 
 " MRU options
 let MRU_Max_Entries=1000
-let MRU_Exclude_Files='^/tmp/.*\|^.*tmp$|^/var/tmp/.*\|mutt-soljaris14.*\|^COMMIT_EDITMSG$|^MERGE_MSG$'
+let MRU_Exclude_Files='^/tmp/.*\|^.*tmp$|^/var/tmp/.*\|^.*mutt.*\|.*COMMIT_EDITMSG$|.*MERGE_MSG$|.*fugitiveblame|.*crontab.*'
 let MRU_File=$HOME . '/.vim/mru_files'
 nmap <leader>l :MRU<CR>
 
@@ -509,6 +509,9 @@ let g:syntastic_auto_loc_list=2
 "let g:syntastic_quiet_warnings=1
 let g:syntastic_phpcs_disable = 1
 nmap <leader>tc :SyntasticToggleMode<CR>
+
+" http://stackoverflow.com/questions/18270355
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 " CheckAttach
 let g:checkattach_filebrowser='ranger'
