@@ -396,7 +396,7 @@ nmap <leader>nm :NERDTreeMirror<CR>
 
 " MRU options
 let MRU_Max_Entries=1000
-let MRU_Exclude_Files='^/tmp/.*\|^.*tmp$|^/var/tmp/.*\|^.*mutt.*\|.*COMMIT_EDITMSG$|.*MERGE_MSG$|.*fugitiveblame|.*crontab.*'
+let MRU_Exclude_Files='^/tmp/.*\|^.*tmp$\|^/var/tmp/.*\|^.*mutt.*\|.*COMMIT_EDITMSG$\|.*MERGE_MSG$\|.*fugitiveblame\|.*crontab.*'
 let MRU_File=$HOME . '/.vim/mru_files'
 nmap <leader>l :MRU<CR>
 
