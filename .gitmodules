@@ -64,9 +64,6 @@
 [submodule "bundle/php.vim--Garvin"]
 	path = bundle/php.vim--Garvin
 	url = git://github.com/vim-scripts/php.vim--Garvin.git
-[submodule "bundle/PreciseJump"]
-	path = bundle/PreciseJump
-	url = git://github.com/vim-scripts/PreciseJump.git
 [submodule "bundle/searchfold"]
 	path = bundle/searchfold
 	url = git://github.com/vim-scripts/searchfold.vim.git
@@ -97,18 +94,6 @@
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode.git
-[submodule "bundle/vim-textobj-fold"]
-	path = bundle/vim-textobj-fold
-	url = git://github.com/kana/vim-textobj-fold.git
-[submodule "bundle/vim-textobj-indent"]
-	path = bundle/vim-textobj-indent
-	url = git://github.com/kana/vim-textobj-indent.git
-[submodule "bundle/vim-textobj-syntax"]
-	path = bundle/vim-textobj-syntax
-	url = git://github.com/kana/vim-textobj-syntax.git
-[submodule "bundle/vim-textobj-user"]
-	path = bundle/vim-textobj-user
-	url = git://github.com/kana/vim-textobj-user.git
 [submodule "bundle/ScmFrontEnd-former-name--MinSCM"]
 	path = bundle/ScmFrontEnd-former-name--MinSCM
 	url = https://github.com/vim-scripts/ScmFrontEnd-former-name--MinSCM.git
@@ -145,9 +130,6 @@
 [submodule "bundle/vim-statline"]
 	path = bundle/vim-statline
 	url = git://github.com/millermedeiros/vim-statline.git
-[submodule "bundle/voom"]
-	path = bundle/voom
-	url = git://github.com/vim-scripts/VOoM.git
 [submodule "bundle/Align"]
 	path = bundle/Align
 	url = git://github.com/vim-scripts/Align.git
@@ -187,3 +169,12 @@
 [submodule "bundle/matchit.zip"]
 	path = bundle/matchit.zip
 	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/vim-exchange"]
+	path = bundle/vim-exchange
+	url = https://github.com/tommcdo/vim-exchange.git
+[submodule "bundle/vim-yankstack"]
+	path = bundle/vim-yankstack
+	url = https://github.com/maxbrunsfeld/vim-yankstack

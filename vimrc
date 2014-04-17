@@ -220,6 +220,10 @@ autocmd FileType tex lcd %:p:h
 
 autocmd FileType tex setlocal foldmethod=marker
 
+" http://vim.wikia.com/wiki/All_folds_open_when_opening_a_file
+" http://stackoverflow.com/questions/5074191/vim-fold-top-level-folds-only
+autocmd FileType markdown normal %foldc
+
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
     au!
@@ -334,6 +338,16 @@ command! PrettyXML call DoPrettyXML()
 nmap <leader>vA :VCSAnnotate<CR>
 nmap <leader>vd :VCSDiff<CR>
 nmap <leader>vl :VCSLog<CR>
+
+
+""" Formatting stuff
+
+let html_formatprg  = "pandoc --from=html --to=markdown"
+let html_formatprg .= " | pandoc --from=markdown --to=html"
+autocmd FileType html let &formatprg=html_formatprg
+
+let mail_formatprg = "par q"
+autocmd FileType mail let &formatprg=mail_formatprg
 
 " format stuff, nano emulation:)
 "set formatprg=par\ q
@@ -466,9 +480,6 @@ autocmd FileType markdown nmap <leader>m :silent !viewMarkdown.sh %<CR>
 " http://vim.wikia.com/wiki/Editing_crontab
 set backupskip=/tmp/*,/private/tmp/*
 
-" Precise Jump shortcut
-nmap <leader><leader> _f
-
 " go/change working directory - (g|G)o (f = file, r = root, h = home)
 nmap <leader>gf :lcd %:p:h<CR>:pwd<CR>
 nmap <leader>Gf :cd %:p:h<CR>:pwd<CR>
@@ -476,6 +487,12 @@ nmap <leader>gr :lcd $HOME/.vim/scripts/vcsroot.sh<CR>:pwd<CR>
 nmap <leader>Gr :cd $HOME/.vim/scripts/vcsroot.sh<CR>:pwd<CR>
 nmap <leader>gh :lcd $HOME<CR>:pwd<CR>
 nmap <leader>Gh :cd $HOME<CR>:pwd<CR>
+
+" Yankstack specific bindings
+" https://github.com/maxbrunsfeld/vim-yankstack
+let g:yankstack_map_keys = 0
+nmap <leader>p <Plug>yankstack_substitute_older_paste
+nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 " PHP Specific options
 " http://stackoverflow.com/questions/5130406/how-to-i-display-results-of-phpcs-in-vim
