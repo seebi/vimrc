@@ -106,9 +106,6 @@
 [submodule "bundle/vim-ragtag"]
 	path = bundle/vim-ragtag
 	url = git://github.com/tpope/vim-ragtag.git
-[submodule "bundle/vim-session"]
-	path = bundle/vim-session
-	url = git://github.com/xolox/vim-session.git
 [submodule "bundle/numlist.vim"]
 	path = bundle/numlist.vim
 	url = git://github.com/vim-scripts/numlist.vim.git
