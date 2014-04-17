@@ -7,9 +7,6 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
-[submodule "bundle/lbdbq"]
-	path = bundle/lbdbq
-	url = git://github.com/vim-scripts/lbdbq.git
 [submodule "bundle/Mail_Sig.set"]
 	path = bundle/Mail_Sig.set
 	url = git://github.com/vim-scripts/Mail_Sig.set.git
@@ -43,9 +40,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
-[submodule "bundle/TeX-PDF"]
-	path = bundle/TeX-PDF
-	url = git://github.com/vim-scripts/TeX-PDF.git
 [submodule "bundle/uri-ref"]
 	path = bundle/uri-ref
 	url = git://github.com/vim-scripts/uri-ref.git
@@ -58,12 +52,6 @@
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = git://github.com/hallettj/jslint.vim.git
-[submodule "bundle/liquid"]
-	path = bundle/liquid
-	url = git://github.com/vim-scripts/liquid.vim.git
-[submodule "bundle/php.vim--Garvin"]
-	path = bundle/php.vim--Garvin
-	url = git://github.com/vim-scripts/php.vim--Garvin.git
 [submodule "bundle/searchfold"]
 	path = bundle/searchfold
 	url = git://github.com/vim-scripts/searchfold.vim.git
@@ -94,9 +82,6 @@
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode.git
-[submodule "bundle/ScmFrontEnd-former-name--MinSCM"]
-	path = bundle/ScmFrontEnd-former-name--MinSCM
-	url = https://github.com/vim-scripts/ScmFrontEnd-former-name--MinSCM.git
 [submodule "bundle/easychair"]
 	path = bundle/easychair
 	url = git@github.com:seebi/easychair.vim.git
@@ -127,9 +112,6 @@
 [submodule "bundle/vim-statline"]
 	path = bundle/vim-statline
 	url = git://github.com/millermedeiros/vim-statline.git
-[submodule "bundle/Align"]
-	path = bundle/Align
-	url = git://github.com/vim-scripts/Align.git
 [submodule "bundle/swapit"]
 	path = bundle/swapit
 	url = git://github.com/mjbrownie/swapit.git

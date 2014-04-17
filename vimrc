@@ -494,6 +494,9 @@ let g:yankstack_map_keys = 0
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
+" search for the keyword under the cursor via dash
+nmap <silent> <leader>d <Plug>DashSearch
+
 " PHP Specific options
 " http://stackoverflow.com/questions/5130406/how-to-i-display-results-of-phpcs-in-vim
 let php_sql_query=1     " Highlight sql in php strings
