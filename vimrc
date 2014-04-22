@@ -32,10 +32,20 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-" gvim font
-"set guifont=Monospace\ 14
-"set guifont=Monaco\ 14
-set guifont=Inconsolata\ Medium\ 18
+" Complete gui font setup
+if has("gui_running")
+    set lines=40 columns=130
+    if has("gui_gtk2")
+        set guifont=Luxi\ Mono\ 12
+    elseif has("x11")
+        " Also for GTK 1
+        set guifont=*-lucidatypewriter-medium-r-normal-*-*-180-*-*-m-*-*
+    elseif has("gui_win32")
+        set guifont=Luxi_Mono:h12:cANSI
+    elseif has("gui_macvim")
+        set guifont=Inconsolata-dz:h16
+    endif
+endif
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
