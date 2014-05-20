@@ -121,9 +121,6 @@
 [submodule "bundle/fakeclip"]
 	path = bundle/fakeclip
 	url = git://github.com/kana/vim-fakeclip.git
-[submodule "bundle/vim-pandoc"]
-	path = bundle/vim-pandoc
-	url = git@github.com:vim-pandoc/vim-pandoc.git
 [submodule "bundle/Dockerfile.vim"]
 	path = bundle/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git
