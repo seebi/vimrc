@@ -425,14 +425,14 @@ let MRU_File=$HOME . '/.vim/mru_files'
 nmap <leader>l :MRU<CR>
 
 " Snippets
-function! OpenSnippetsForCurrentFile ()
-    let filetype = &filetype
-    "tabedit "~/.vim/snippets/" . filetype
-    tabedit $HOME/.vim/snippets
-endfunction
-
-nmap <leader>rs :call OpenSnippetsForCurrentFile()<CR>
-autocmd bufwritepost *.snippets call ReloadAllSnippets()
+"function! OpenSnippetsForCurrentFile ()
+"    let filetype = &filetype
+"    "tabedit "~/.vim/snippets/" . filetype
+"    tabedit $HOME/.vim/snippets
+"endfunction
+"
+"nmap <leader>rs :call OpenSnippetsForCurrentFile()<CR>
+"autocmd bufwritepost *.snippets call ReloadAllSnippets()
 
 " To save, ctrl-w.
 imap <c-w> <Esc>:w<CR>a
