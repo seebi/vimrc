@@ -17,6 +17,7 @@ source $HOME/.vim/mappings.vim
 source $HOME/.vim/autocmds.vim
 source $HOME/.vim/commands.vim
 source $HOME/.vim/addons-config.vim
+source $HOME/.vim/private.vim
 
 if NVIM_LISTEN_ADDRESS == '/tmp/neovim/neovim581'
     source $HOME/.vim/neovim.vim

@@ -10,4 +10,5 @@ mru_files
 bundle.bak
 .netrwhist
 *.private
+private.*
 ruby/command-t/ext.so
