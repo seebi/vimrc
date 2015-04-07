@@ -65,8 +65,6 @@ nmap <leader>sb :set spelllang=de_20,en_gb<CR>
 " go/change working directory - (g|G)o (f = file, r = root, h = home)
 nmap <leader>gf :lcd %:p:h<CR>:pwd<CR>
 nmap <leader>Gf :cd %:p:h<CR>:pwd<CR>
-nmap <leader>gr :lcd $HOME/.vim/scripts/vcsroot.sh<CR>:pwd<CR>
-nmap <leader>Gr :cd $HOME/.vim/scripts/vcsroot.sh<CR>:pwd<CR>
 nmap <leader>gh :lcd $HOME<CR>:pwd<CR>
 nmap <leader>Gh :cd $HOME<CR>:pwd<CR>
 
