@@ -43,7 +43,7 @@ if has("gui_running")
     elseif has("gui_win32")
         set guifont=Luxi_Mono:h12:cANSI
     elseif has("gui_macvim")
-        set guifont=Inconsolata-dz:h16
+        set guifont=Inconsolata-dz:h15
     endif
 endif
 
@@ -383,12 +383,15 @@ set spelllang=en_gb
 nmap <leader>sg :set spelllang=en_gb<CR>
 nmap <leader>su :set spelllang=en_us<CR>
 nmap <leader>sd :set spelllang=de_20<CR>
+nmap <leader>sb :set spelllang=de_20,en_gb<CR>
 
 
 " turn on wrap for e.g. tex files
 command! -nargs=* Wrap set wrap linebreak nolist
 autocmd FileType tex Wrap
 autocmd FileType markdown Wrap
+autocmd FileType markdown set textwidth=0
+autocmd FileType markdown set wrapmargin=0
 
 " handy uppercase commands for german keyboards (: is used with shift)
 command! -nargs=* Q q
