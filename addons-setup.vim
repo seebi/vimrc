@@ -1,6 +1,4 @@
 
-set nocompatible | filetype indent plugin on | syn on
-
 fun! SetupVAM()
   let c = get(g:, 'vim_addon_manager', {})
   let g:vim_addon_manager = c
@@ -22,19 +20,3 @@ fun! SetupVAM()
   call vam#ActivateAddons([], {})
 endfun
 call SetupVAM()
-
-" ACTIVATING PLUGINS
-
-" OPTION 1, use VAMActivate
-" VAMActivate PLUGIN_NAME PLUGIN_NAME ..
-
-VAMActivate fugitive
-
-
-" OPTION 2: use call vam#ActivateAddons
-" call vam#ActivateAddons([PLUGIN_NAME], {})
-" use <c-x><c-p> to complete plugin names
-
-" OPTION 3: Create a file ~/.vim-srcipts putting a PLUGIN_NAME into each line
-" See lazy loading plugins section in README.md for details
-" call vam#Scripts('~/.vim-scripts', {'tag_regex': '.*'})

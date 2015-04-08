@@ -1,4 +1,11 @@
 
+"{{{ Solarized
+"let g:solarized_termcolors=16
+let g:solarized_termcolors=256
+"let g:solarized_visibility="high"
+colorscheme solarized
+"}}}
+
 "{{{ Tagbar
 let g:tagbar_autoclose = 1
 " toggle outline
@@ -13,11 +20,12 @@ nmap <leader>nn :lcd %:p:h<CR>:NERDTreeToggle<CR>
 nmap <leader>nm :NERDTreeMirror<CR>
 "}}}
 
-"{{{ MRU
-let MRU_Max_Entries=1000
-let MRU_Exclude_Files='^/tmp/.*\|^.*tmp$\|^/var/tmp/.*\|^.*mutt.*\|.*COMMIT_EDITMSG$\|.*MERGE_MSG$\|.*fugitiveblame\|.*crontab.*'
-let MRU_File=$HOME . '/.vim/mru_files'
-nmap <leader>l :MRU<CR>
+"{{{ CTRLP
+nmap <leader>l :CtrlPMRU<CR>
+let g:ctrlp_custom_ignore = {
+            \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+            \ 'file': '\v(mutt-soljaris.*|COMMIT.*|TAG.*)$',
+            \ }
 "}}}
 
 "{{{ toggle graphical undo visualization

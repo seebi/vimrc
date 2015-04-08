@@ -1,3 +1,8 @@
+
+set nocompatible
+filetype indent plugin on
+syntax on
+
 set undodir=$HOME/.vim/undos
 set undofile        " new feature of undo files
 
@@ -77,7 +82,3 @@ endif
 set t_Co=256 " turn on 256 colors in terminal on dark background
 set background=dark
 "set background=light
-"let g:solarized_termcolors=16
-let g:solarized_termcolors=256
-"let g:solarized_visibility="high"
-colorscheme solarized

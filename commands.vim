@@ -31,7 +31,7 @@ map <Leader>b :call Browser ()<CR>
 
 " Save a file you edited in vim without the needed permissions
 " http://www.commandlinefu.com/commands/view/1204/save-a-file-you-edited-in-vim-without-the-needed-permissions
-command! Sudow :w !sudo tee %
+" command! Sudow :w !sudo tee %
 
 " remove trailing whitespaces in the complete file
 command! -nargs=* StripTrailingWhitespaces :%s/\s\+$//
