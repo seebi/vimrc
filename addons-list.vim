@@ -16,16 +16,18 @@ VAMActivate vim-airline   " Lean & mean status/tabline for vim that's light as a
 VAMActivate vim-multiple-cursors
 
 """ searching
-VAMActivate ack                    " ack / ag searches
+VAMActivate ag                     " a front for ag, A.K.A. the_silver_searcher.
 VAMActivate searchfold             " Fold away lines not matching the last search pattern
 VAMActivate vim-visual-star-search " visual mark, then press * or # to search
 VAMActivate ctrlp                  " Fuzzy file, buffer, MRU, and tag finder with regexp support
+VAMActivate github:Wolfy87/vim-enmasse " Takes a quickfix list and makes it editable
 " VAMActivate over               " substitute preview
 
 """ motions / operators
 VAMActivate surround     " Delete/change/add parentheses/quotes/XML-tags/much more with ease
 VAMActivate EasyMotion   " Vim motions on speed!
 VAMActivate vim-exchange " Easy text exchange operator for
+VAMActivate github:kana/vim-textobj-user " plugin to create your own text objects without pain
 
 """ programming
 VAMActivate commentary    " Comment stuff out; takes a motion as a target
@@ -35,6 +37,8 @@ VAMActivate Tagbar        " Display tags of the current file ordered by scope
 VAMActivate Syntastic     " Automatic syntax checking
 VAMActivate matchit.zip   " extended % matching for HTML, LaTeX, and many other languages
 VAMActivate SwapIt        " Extensible keyword swapper (turn yes to no, True to False and more)
+VAMActivate Indent_Guides " a plugin for visually displaying indent levels
+VAMActivate github:plasticboy/vim-markdown " Syntax highlighting, matching rules and mappings for the original Markdown and extensions
 VAMActivate semweb
 
 """ mailing
