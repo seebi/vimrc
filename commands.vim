@@ -23,7 +23,7 @@ endfunc
 function! Browser ()
     let line = getline (".")
     let line = matchstr (line, "http[^   ]*")
-    exec "!~/bin/scripts/browser.sh ".line
+    exec "!~/.local/bin/browser.sh ".line
 endfunction
 " Open Url on this line with the browser \w
 map <Leader>b :call Browser ()<CR>
