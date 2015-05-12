@@ -70,5 +70,10 @@ hi IndentGuidesEven ctermbg=235
 
 " {{{ Markdown
 autocmd FileType markdown nmap <leader>to :Toc<CR>
+let g:vim_markdown_folding_disabled=1
 " }}}
 
+" {{{ airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+" }}}

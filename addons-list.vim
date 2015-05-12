@@ -66,7 +66,7 @@
     " A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
     VAMActivate github:airblade/vim-gitgutter
     " VAMActivate Tagbar        " Display tags of the current file ordered by scope
-    VAMActivate github:majutsushi/tagbar
+    " VAMActivate github:majutsushi/tagbar
     " Automatic syntax checking
     VAMActivate github:scrooloose/syntastic
     " extended % matching for HTML, LaTeX, and many other languages
@@ -77,6 +77,8 @@
     VAMActivate github:nathanaelkane/vim-indent-guides
     " Semantic Web vim bundle
     VAMActivate github:seebi/semweb.vim
+    " EditorConfig
+    VAMActivate github:editorconfig/editorconfig-vim
 "}}}
 
 " mailing {{{
