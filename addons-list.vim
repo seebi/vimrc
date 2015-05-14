@@ -65,8 +65,12 @@
     VAMActivate fugitive
     " A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
     VAMActivate github:airblade/vim-gitgutter
-    " VAMActivate Tagbar        " Display tags of the current file ordered by scope
-    " VAMActivate github:majutsushi/tagbar
+    " A plugin of NERDTree showing git status
+    VAMActivate github:Xuyuanp/nerdtree-git-plugin
+    " A plugin that adds some fugitive functionality directly to nerdtree for vim
+    VAMActivate github:low-ghost/nerdtree-fugitive
+    " A Vim plugin for more pleasant editing on commit messages
+    VAMActivate github:rhysd/committia.vim
     " Automatic syntax checking
     VAMActivate github:scrooloose/syntastic
     " extended % matching for HTML, LaTeX, and many other languages
