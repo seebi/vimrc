@@ -1,5 +1,7 @@
 
 " general {{{
+    " transparent editing of gpg encrypted files
+    VAMActivate github:jamessan/vim-gnupg
     " The ultimate snippet solution for python enabled Vim.
     VAMActivate github:SirVer/ultisnips
     " Beautiful dual light/dark, selective contrast, GUI/256/16 colorscheme
@@ -19,7 +21,8 @@
     " Supertab allows you to use <Tab> for all your insert completion needs
     VAMActivate github:ervandew/supertab
     " Lean & mean status/tabline for vim that's light as air
-    VAMActivate github:bling/vim-airline
+    VAMActivate github:vim-airline/vim-airline
+    VAMActivate github:vim-airline/vim-airline-themes
     " text filtering and alignment
     VAMActivate github:godlygeek/tabular
     " True Sublime Text style multiple selections
@@ -80,9 +83,16 @@
     " a plugin for visually displaying indent levels
     VAMActivate github:nathanaelkane/vim-indent-guides
     " Semantic Web vim bundle
-    VAMActivate github:seebi/semweb.vim
+    VAMActivate github:niklasl/vim-rdf
+    " VAMActivate github:seebi/semweb.vim
     " EditorConfig
     VAMActivate github:editorconfig/editorconfig-vim
+    " React JSX syntax highlighting and indenting for vim
+    VAMActivate github:mxw/vim-jsx
+    " RAML plugin for VIM
+    VAMActivate github:kennethzfeng/vim-raml
+    " This is a Vim plugin that provides Tern-based JavaScript editing support.
+    VAMActivate github:marijnh/tern_for_vim
 "}}}
 
 " mailing {{{
@@ -95,6 +105,7 @@
 "}}}
 
 " syntaxes {{{
+  VAMActivate github:Glench/Vim-Jinja2-Syntax
 " VAMActivate applescript.vim
 " VAMActivate confluencewiki.vim
 " VAMActivate logstash

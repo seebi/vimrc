@@ -1,8 +1,19 @@
 
+"{{{ UltiSnips
+let g:UltiSnipsEditSplit = 'horizontal'
+let g:UltiSnipsSnippetsDir = '/Users/seebi/.vim/UltiSnips'
+"}}}
+"
+"{{{ rdf
+au! BufNewFile,BufRead *.ttl,*.nt,*.nq  set filetype=turtle
+au! BufNewFile,BufRead *.trig  set filetype=trig
+au! BufNewFile,BufRead *.n3  set filetype=n3
+au! BufNewFile,BufRead *.jsonld  set filetype=jsonld
+"}}}
+
 "{{{ Solarized
-"let g:solarized_termcolors=16
-let g:solarized_termcolors=256
-"let g:solarized_visibility="high"
+" more at https://github.com/altercation/vim-colors-solarized
+" set background=dark
 colorscheme solarized
 "}}}
 
@@ -53,6 +64,8 @@ let g:syntastic_phpcs_disable = 1
 " http://stackoverflow.com/questions/18270355
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 nmap <leader>tc :SyntasticToggleMode<CR>
+" https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+let g:syntastic_javascript_checkers = ['eslint']
 "}}}
 
 "{{{ CheckAttach

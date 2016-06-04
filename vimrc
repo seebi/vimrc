@@ -21,7 +21,7 @@ source $HOME/.vim/addons-config.vim
 
 source $HOME/.vim/private.vim
 
-if NVIM_LISTEN_ADDRESS == '/tmp/neovim/neovim581'
+if has('nvim')
     source $HOME/.vim/neovim.vim
 endif
 
