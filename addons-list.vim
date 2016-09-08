@@ -60,6 +60,8 @@
 "}}}
 
 " programming {{{
+    " EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+    VAMActivate github:editorconfig/editorconfig-vim
     " Syntax highlighting, matching rules and mappings for the original Markdown and extensions
     VAMActivate github:plasticboy/vim-markdown
     " Comment stuff out; takes a motion as a target

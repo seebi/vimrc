@@ -90,3 +90,7 @@ let g:vim_markdown_folding_disabled=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " }}}
+
+" {{{ editorconfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+" }}}
