@@ -82,8 +82,9 @@ hi IndentGuidesEven ctermbg=235
 "}}}
 
 " {{{ Markdown
-autocmd FileType markdown nmap <leader>to :Toc<CR>
+autocmd FileType markdown nmap <leader>to :Toch<CR>
 let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_toc_autofit = 1
 " }}}
 
 " {{{ airline
@@ -93,4 +94,30 @@ let g:airline_powerline_fonts = 1
 
 " {{{ editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+" }}}
+
+" {{{ fugitive
+" just git status
+nnoremap <leader>gs :Gstatus<CR>
+" commit from the current staging area
+nnoremap <leader>gc :Gcommit -v -q<CR>
+" commit from the current file
+nnoremap <leader>gt :Gcommit -v -q %:p<CR>
+" diff of current file
+nnoremap <leader>gd :Gdiff<CR>
+" just fugititve git edit
+nnoremap <leader>ge :Gedit<CR>
+" just fugititve git read
+nnoremap <leader>gr :Gread<CR>
+" just fugititve git write
+nnoremap <leader>gw :Gwrite<CR><CR>
+" git log
+nnoremap <leader>gl :silent! Glog<CR>:bot copen<CR>
+" }}}
+
+" {{{ gitgutter
+" add current hunk to stage
+nnoremap <leader>ga :GitGutterStageHunk<CR><CR>
+" toggle line highlights
+nnoremap <leader>tg :GitGutterLineHighlightsToggle<CR><CR>
 " }}}
