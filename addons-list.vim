@@ -60,10 +60,14 @@
 "}}}
 
 " programming {{{
+    " provides syntax highlighting, indenting, and some editing commands
+    VAMActivate github:tpope/vim-cucumber
     " EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
     VAMActivate github:editorconfig/editorconfig-vim
     " Syntax highlighting, matching rules and mappings for the original Markdown and extensions
     VAMActivate github:plasticboy/vim-markdown
+    " generate table of contents for Markdown files
+    VAMActivate github:mzlogin/vim-markdown-toc
     " Comment stuff out; takes a motion as a target
     VAMActivate github:tpope/vim-commentary
     " A Git wrapper so awesome, it should be illegal
