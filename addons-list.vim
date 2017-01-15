@@ -10,7 +10,7 @@
     VAMActivate github:scrooloose/nerdtree
     " Visualize your undo tree
     VAMActivate github:sjl/gundo.vim
-    " VAMActivate yankstack     " lightweight implementation of emacs' kill ring for vim
+    " lightweight implementation of emacs' kill ring for vim
     VAMActivate github:maxbrunsfeld/vim-yankstack
     " Use the repeat command (.) with supported plugins
     VAMActivate github:tpope/vim-repeat
@@ -27,10 +27,6 @@
     VAMActivate github:godlygeek/tabular
     " True Sublime Text style multiple selections
     VAMActivate github:terryma/vim-multiple-cursors
-    " sugar for the UNIX shell commands that need it the most
-    "VAMActivate tpope/vim-eunuch
-    VAMActivate eunuch
-    " VAMActivate MRU           " Plugin to manage Most Recently Used (MRU) files
 "}}}
 
 " searching {{{
@@ -91,8 +87,6 @@
     " Semantic Web vim bundle
     VAMActivate github:niklasl/vim-rdf
     " VAMActivate github:seebi/semweb.vim
-    " EditorConfig
-    VAMActivate github:editorconfig/editorconfig-vim
     " React JSX syntax highlighting and indenting for vim
     VAMActivate github:mxw/vim-jsx
     " RAML plugin for VIM
@@ -131,5 +125,6 @@
 " VAMActivate utl.vim
 " VAMActivate dash.vim
 " VAMActivate delimitMate
+" VAMActivate MRU           " Plugin to manage Most Recently Used (MRU) files
 "}}}
 
