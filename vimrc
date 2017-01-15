@@ -10,9 +10,9 @@
 
 let NVIM_LISTEN_ADDRESS=$NVIM_LISTEN_ADDRESS
 
+source $HOME/.vim/autocmds.vim
 source $HOME/.vim/basics.vim
 source $HOME/.vim/mappings.vim
-source $HOME/.vim/autocmds.vim
 source $HOME/.vim/commands.vim
 
 source $HOME/.vim/addons-setup.vim

@@ -5,9 +5,19 @@ autocmd FocusLost * :wa
 "autocmd FileType mail colorscheme transparent
 "
 " for tex files only: swich working directory according to to file
-autocmd FileType tex lcd %:p:h
+augroup tex
+    autocmd FileType tex lcd %:p:h
+    autocmd FileType tex setlocal foldmethod=marker
+    " turn on wrap for tex files
+    autocmd FileType tex set wrap linebreak nolist
+augroup END
 
-autocmd FileType tex setlocal foldmethod=marker
+" shell script editing
+augroup sh
+    autocmd FileType sh let g:sh_fold_enabled=1
+    autocmd FileType sh let g:is_bash=1
+    autocmd FileType sh set foldmethod=syntax
+augroup END
 
 " http://vim.wikia.com/wiki/Learn_to_use_help#Simplify_help_navigation
 "
@@ -17,13 +27,15 @@ autocmd FileType tex setlocal foldmethod=marker
 " * Press s to find the next subject, or S to find the previous subject.
 " * Press o to find the next option, or O to find the previous option.
 "
-autocmd FileType help nnoremap <buffer> <CR> <C-]>
-autocmd FileType help nnoremap <buffer> <BS> <C-T>
-autocmd FileType help nnoremap <buffer> o /'\l\{2,\}'<CR>
-autocmd FileType help nnoremap <buffer> O ?'\l\{2,\}'<CR>
-autocmd FileType help nnoremap <buffer> s /\|\zs\S\+\ze\|<CR>
-autocmd FileType help nnoremap <buffer> S ?\|\zs\S\+\ze\|<CR>
-autocmd FileType help setlocal nohlsearch
+augroup help
+    autocmd FileType help nnoremap <buffer> <CR> <C-]>
+    autocmd FileType help nnoremap <buffer> <BS> <C-T>
+    autocmd FileType help nnoremap <buffer> o /'\l\{2,\}'<CR>
+    autocmd FileType help nnoremap <buffer> O ?'\l\{2,\}'<CR>
+    autocmd FileType help nnoremap <buffer> s /\|\zs\S\+\ze\|<CR>
+    autocmd FileType help nnoremap <buffer> S ?\|\zs\S\+\ze\|<CR>
+    autocmd FileType help setlocal nohlsearch
+augroup END
 
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
@@ -50,18 +62,17 @@ augroup END
 " vimrc_on_the_fly from vimcasts
 autocmd bufwritepost .vimrc source $MYVIMRC
 
-" turn on wrap for tex files
-autocmd FileType tex set wrap linebreak nolist
-
-" Markdown (no need for modula2 :)
-autocmd BufRead,BufNewFile *.md set filetype=markdown
-autocmd FileType markdown set wrap linebreak nolist
-autocmd FileType markdown set textwidth=0
-autocmd FileType markdown set wrapmargin=0
-autocmd FileType markdown nmap <leader>m :silent !open %<CR>
-" http://vim.wikia.com/wiki/All_folds_open_when_opening_a_file
-" http://stackoverflow.com/questions/5074191/vim-fold-top-level-folds-only
-autocmd FileType markdown normal %foldc
+augroup markdown
+    " Markdown (no need for modula2 :)
+    autocmd BufRead,BufNewFile *.md set filetype=markdown
+    autocmd FileType markdown set wrap linebreak nolist
+    autocmd FileType markdown set textwidth=0
+    autocmd FileType markdown set wrapmargin=0
+    autocmd FileType markdown nmap <leader>m :silent !open %<CR>
+    " http://vim.wikia.com/wiki/All_folds_open_when_opening_a_file
+    " http://stackoverflow.com/questions/5074191/vim-fold-top-level-folds-only
+    autocmd FileType markdown normal %foldc
+augroup END
 
 " Transparent editing of gpg encrypted files.
 " By Wouter Hanegraaff
