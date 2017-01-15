@@ -6,8 +6,6 @@
     VAMActivate github:SirVer/ultisnips
     " Beautiful dual light/dark, selective contrast, GUI/256/16 colorscheme
     VAMActivate github:altercation/vim-colors-solarized
-    " A tree explorer plugin for navigating the filesystem
-    VAMActivate github:scrooloose/nerdtree
     " Visualize your undo tree
     VAMActivate github:sjl/gundo.vim
     " lightweight implementation of emacs' kill ring for vim
@@ -28,6 +26,17 @@
     " True Sublime Text style multiple selections
     VAMActivate github:terryma/vim-multiple-cursors
 "}}}
+
+" nerd-tree {{{
+    " A tree explorer plugin for navigating the filesystem
+    VAMActivate github:scrooloose/nerdtree
+    " aims at making NERDTree feel like a true panel, independent of tabs
+    VAMActivate github:jistr/vim-nerdtree-tabs
+    " A plugin of NERDTree showing git status
+    VAMActivate github:Xuyuanp/nerdtree-git-plugin
+    " A plugin that adds some fugitive functionality directly to nerdtree for vim
+    VAMActivate github:low-ghost/nerdtree-fugitive
+" }}}
 
 " searching {{{
     " a front for ag, A.K.A. the_silver_searcher.
@@ -70,10 +79,6 @@
     VAMActivate fugitive
     " A Vim plugin which shows a git diff in the gutter (sign column) and stages/reverts hunks.
     VAMActivate github:airblade/vim-gitgutter
-    " A plugin of NERDTree showing git status
-    VAMActivate github:Xuyuanp/nerdtree-git-plugin
-    " A plugin that adds some fugitive functionality directly to nerdtree for vim
-    VAMActivate github:low-ghost/nerdtree-fugitive
     " A Vim plugin for more pleasant editing on commit messages
     VAMActivate github:rhysd/committia.vim
     " Automatic syntax checking

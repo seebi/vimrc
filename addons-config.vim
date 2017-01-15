@@ -26,9 +26,7 @@ nmap <leader>to :TagbarToggle<CR>
 "{{{ NERDTree
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore=['\.aux$', '\.log$', '\.lof', '\.lol', '\.lot']
-nmap <leader>n :lcd %:p:h<CR>:NERDTreeToggle<CR>
-nmap <leader>nn :lcd %:p:h<CR>:NERDTreeToggle<CR>
-nmap <leader>nm :NERDTreeMirror<CR>
+nmap <leader>n :lcd %:p:h<CR>:NERDTreeTabsToggle<CR>
 "}}}
 
 "{{{ CTRLP
