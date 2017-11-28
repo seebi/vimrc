@@ -2,6 +2,10 @@
 "{{{ UltiSnips
 let g:UltiSnipsEditSplit = 'horizontal'
 let g:UltiSnipsSnippetsDir = '/Users/seebi/.vim/UltiSnips'
+" UltiSnips triggering
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 "}}}
 "
 "{{{ rdf
