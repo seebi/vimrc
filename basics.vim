@@ -81,7 +81,7 @@ if has('mouse')
 endif
 
 " set font for gvim or macvim
-set guifont=Inconsolata-dz\ for\ Powerline:h15
+" set guifont=Inconsolata-dz\ for\ Powerline:h15
 
 set t_Co=256 " turn on 256 colors in terminal on dark background
 " set background=dark
