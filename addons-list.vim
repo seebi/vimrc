@@ -1,23 +1,19 @@
 
 " general {{{
+    " Ranger integration in vim and neovim
+    VAMActivate github:francoiscabrol/ranger.vim
     " transparent editing of gpg encrypted files
     VAMActivate github:jamessan/vim-gnupg
     " The ultimate snippet solution for python enabled Vim.
     VAMActivate github:SirVer/ultisnips
     " Beautiful dual light/dark, selective contrast, GUI/256/16 colorscheme
     VAMActivate github:altercation/vim-colors-solarized
-    " Visualize your undo tree
-    VAMActivate github:sjl/gundo.vim
-    " lightweight implementation of emacs' kill ring for vim
-    VAMActivate github:maxbrunsfeld/vim-yankstack
     " Use the repeat command (.) with supported plugins
     VAMActivate github:tpope/vim-repeat
     " Use CTRL-A/X to increment dates, times, and more
     VAMActivate github:tpope/vim-speeddating
     " Press `<ENTER>` in normal mode to select the closest text object
     VAMActivate github:gcmt/wildfire.vim
-    " Supertab allows you to use <Tab> for all your insert completion needs
-    VAMActivate github:ervandew/supertab
     " Lean & mean status/tabline for vim that's light as air
     VAMActivate github:vim-airline/vim-airline
     VAMActivate github:vim-airline/vim-airline-themes
@@ -46,7 +42,7 @@
     " visual mark, then press * or # to search
     VAMActivate github:bronson/vim-visual-star-search
     " Fuzzy file, buffer, MRU, and tag finder with regexp support
-    VAMActivate github:kien/ctrlp.vim
+    VAMActivate github:ctrlpvim/ctrlp.vim
     " Takes a quickfix list and makes it editable
     VAMActivate github:Wolfy87/vim-enmasse
     " substitute preview
@@ -97,7 +93,9 @@
     " RAML plugin for VIM
     VAMActivate github:kennethzfeng/vim-raml
     " This is a Vim plugin that provides Tern-based JavaScript editing support.
-    VAMActivate github:marijnh/tern_for_vim
+    " VAMActivate github:marijnh/tern_for_vim
+    " dockerfile syntax
+    VAMActivate github:ekalinin/Dockerfile.vim
 "}}}
 
 " mailing {{{
@@ -110,26 +108,40 @@
 "}}}
 
 " syntaxes {{{
-  VAMActivate github:Glench/Vim-Jinja2-Syntax
-" VAMActivate applescript.vim
-" VAMActivate confluencewiki.vim
-" VAMActivate logstash
-" VAMActivate syntaxconkyrc
+      VAMActivate github:Glench/Vim-Jinja2-Syntax
+    " VAMActivate applescript.vim
+    " VAMActivate logstash
+    " VAMActivate syntaxconkyrc
+    VAMActivate github:coddingtonbear/confluencewiki.vim
 "}}}
 
 " currently not needed {{{
-" VAMActivate JSON
-" VAMActivate conque
-" VAMActivate vim-abolish
-" VAMActivate vim-orgmode
-" VAMActivate groovy.vim
-" VAMActivate vim-ragtag
-" VAMActivate easychair
-" VAMActivate md5
-" VAMActivate vim-dict
-" VAMActivate utl.vim
-" VAMActivate dash.vim
-" VAMActivate delimitMate
-" VAMActivate MRU           " Plugin to manage Most Recently Used (MRU) files
+    " VAMActivate JSON
+    " VAMActivate conque
+    " VAMActivate vim-abolish
+    " VAMActivate vim-orgmode
+    " VAMActivate groovy.vim
+    " VAMActivate vim-ragtag
+    " VAMActivate easychair
+    " VAMActivate md5
+    " VAMActivate vim-dict
+    " VAMActivate utl.vim
+    " VAMActivate dash.vim
+    " VAMActivate delimitMate
+    " VAMActivate MRU           " Plugin to manage Most Recently Used (MRU) files
+    " Extra syntax and highlight for nerdtree files
+    " VAMActivate github:tiagofumo/vim-nerdtree-syntax-highlight
+    " Adds file type glyphs/icons to many popular Vim plugins such as: NERDTree ...
+    " VAMActivate github:ryanoasis/vim-devicons
+    " Visualize your undo tree
+    " VAMActivate github:sjl/gundo.vim
+    " lightweight implementation of emacs' kill ring for vim
+    " VAMActivate github:maxbrunsfeld/vim-yankstack
+    " Supertab allows you to use <Tab> for all your insert completion needs
+    " VAMActivate github:ervandew/supertab
+    " fast, as-you-type, fuzzy-search code completion engine for Vim
+    " VAMActivate github:valloric/youcompleteme
+    " The fancy start screen for Vim
+    " VAMActivate github:mhinz/vim-startify
 "}}}
 
