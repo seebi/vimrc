@@ -1,13 +1,17 @@
-
 " general {{{
+    " Dark powered asynchronous completion framework for neovim/Vim8
+    " VAMActivate github:Shougo/deoplete.nvim
+    " Fast, Extensible, Async Completion Framework for Neovim
+    VAMActivate github:roxma/nvim-completion-manager
     " Ranger integration in vim and neovim
-    VAMActivate github:francoiscabrol/ranger.vim
+    " VAMActivate github:francoiscabrol/ranger.vim
+    " VAMActivate github:airodactyl/neovim-ranger
     " transparent editing of gpg encrypted files
     VAMActivate github:jamessan/vim-gnupg
     " The ultimate snippet solution for python enabled Vim.
     VAMActivate github:SirVer/ultisnips
-    " Beautiful dual light/dark, selective contrast, GUI/256/16 colorscheme
-    VAMActivate github:altercation/vim-colors-solarized
+    " A fixed solarized colorscheme for better truecolor support.
+    VAMActivate github:icymind/NeoSolarized
     " Use the repeat command (.) with supported plugins
     VAMActivate github:tpope/vim-repeat
     " Use CTRL-A/X to increment dates, times, and more
@@ -61,6 +65,12 @@
 "}}}
 
 " programming {{{
+    " Vim Liquid runtime files with Jekyll enhancements
+    VAMActivate github:tpope/vim-liquid
+    " Language Server Protocol (LSP) support for vim and neovim.
+    VAMActivate github:autozimu/LanguageClient-neovim
+    " A plugin for deoplete to get flow autocompletion functionality.
+    " VAMActivate github:steelsojka/deoplete-flow
     " provides syntax highlighting, indenting, and some editing commands
     VAMActivate github:tpope/vim-cucumber
     " EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs

@@ -84,8 +84,8 @@ endif
 " set guifont=Inconsolata-dz\ for\ Powerline:h15
 
 set t_Co=256 " turn on 256 colors in terminal on dark background
-" set background=dark
-set background=light
+set background=dark
+" set background=light
 
 " standard folding is marker based unless changed by plugins
 set foldmethod=marker

@@ -1,4 +1,30 @@
 
+"{{{ deoplete
+" let g:deoplete#enable_at_startup = 1
+" let g:deoplete#sources#flow#flow_bin = 'flow'
+"}}}
+
+"{{{ LanguageClient-neovim
+" Required for operations modifying multiple buffers like rename.
+set hidden
+
+let g:LanguageClient_serverCommands = {
+    \ 'javascript': ['javascript-typescript-stdio'],
+    \ }
+
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+"}}}
+"
+"{{{ nvim-completion-manager
+" let g:UltiSnipsExpandTrigger = "<Plug>(ultisnips_expand)"
+inoremap <silent> <c-u> <c-r>=cm#sources#ultisnips#trigger_or_popup("\<Plug>(ultisnips_expand)")<cr>
+" smart tab for auto complete
+inoremap <expr> <silent> <Tab>  pumvisible()?"\<C-n>":"\<TAB>"
+inoremap <expr> <silent> <S-TAB>  pumvisible()?"\<C-p>":"\<S-TAB>"
+"}}}
+
 "{{{ UltiSnips
 let g:UltiSnipsEditSplit = 'horizontal'
 let g:UltiSnipsSnippetsDir = '/Users/seebi/.vim/UltiSnips'
@@ -16,9 +42,9 @@ au! BufNewFile,BufRead *.jsonld  set filetype=jsonld
 "}}}
 
 "{{{ Solarized
-" more at https://github.com/altercation/vim-colors-solarized
 " set background=dark
-colorscheme solarized
+" colorscheme solarized
+colorscheme NeoSolarized
 "}}}
 
 "{{{ Tagbar
