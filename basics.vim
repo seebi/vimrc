@@ -3,11 +3,11 @@ set nocompatible
 filetype indent plugin on
 syntax on
 
-set undodir=$HOME/.vim/undos
+set undodir=$HOME/.config/vim/undos
 set undofile        " new feature of undo files
 
-set directory=$HOME/.vim/swap " no more swapfiles in the same directory
-set backupdir=$HOME/.vim/backups " no more backupfiles in the same directory
+set directory=$HOME/.config/vim/swap " no more swapfiles in the same directory
+set backupdir=$HOME/.config/vim/backups " no more backupfiles in the same directory
 set backupskip=/tmp/*,/private/tmp/* " http://vim.wikia.com/wiki/Editing_crontab
 
 " prevents some security exploits having to do with modelines in files
@@ -84,8 +84,8 @@ endif
 " set guifont=Inconsolata-dz\ for\ Powerline:h15
 
 set t_Co=256 " turn on 256 colors in terminal on dark background
-set background=dark
-" set background=light
+" set background=dark
+set background=light
 
 " standard folding is marker based unless changed by plugins
 set foldmethod=marker

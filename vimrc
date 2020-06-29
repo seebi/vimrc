@@ -10,18 +10,18 @@
 
 let NVIM_LISTEN_ADDRESS=$NVIM_LISTEN_ADDRESS
 
-source $HOME/.vim/autocmds.vim
-source $HOME/.vim/basics.vim
-source $HOME/.vim/mappings.vim
-source $HOME/.vim/commands.vim
+source $HOME/.config/vim/autocmds.vim
+source $HOME/.config/vim/basics.vim
+source $HOME/.config/vim/mappings.vim
+source $HOME/.config/vim/commands.vim
 
-source $HOME/.vim/addons-setup.vim
-source $HOME/.vim/addons-list.vim
-source $HOME/.vim/addons-config.vim
+source $HOME/.config/vim/addons-setup.vim
+source $HOME/.config/vim/addons-list.vim
+source $HOME/.config/vim/addons-config.vim
 
-source $HOME/.vim/private.vim
+source $HOME/.config/vim/private.vim
 
 if has('nvim')
-    source $HOME/.vim/neovim.vim
+    source $HOME/.config/vim/neovim.vim
 endif
 
