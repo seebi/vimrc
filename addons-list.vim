@@ -2,7 +2,7 @@
     " Dark powered asynchronous completion framework for neovim/Vim8
     " VAMActivate github:Shougo/deoplete.nvim
     " Fast, Extensible, Async Completion Framework for Neovim
-    VAMActivate github:roxma/nvim-completion-manager
+    " broken atm: VAMActivate github:roxma/nvim-completion-manager
     " Ranger integration in vim and neovim
     " VAMActivate github:francoiscabrol/ranger.vim
     " VAMActivate github:airodactyl/neovim-ranger
