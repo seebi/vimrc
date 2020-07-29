@@ -1,11 +1,4 @@
 " general {{{
-    " Dark powered asynchronous completion framework for neovim/Vim8
-    " VAMActivate github:Shougo/deoplete.nvim
-    " Fast, Extensible, Async Completion Framework for Neovim
-    " broken atm: VAMActivate github:roxma/nvim-completion-manager
-    " Ranger integration in vim and neovim
-    " VAMActivate github:francoiscabrol/ranger.vim
-    " VAMActivate github:airodactyl/neovim-ranger
     " transparent editing of gpg encrypted files
     VAMActivate github:jamessan/vim-gnupg
     " The ultimate snippet solution for python enabled Vim.
@@ -25,9 +18,15 @@
     VAMActivate github:godlygeek/tabular
     " True Sublime Text style multiple selections
     VAMActivate github:terryma/vim-multiple-cursors
+    " Supertab allows you to use <Tab> for all your insert completion needs
+    VAMActivate github:ervandew/supertab
+    " Vim plugin for easily moving text selections around
+    VAMActivate github:zirrostig/vim-schlepp
 "}}}
 
 " nerd-tree {{{
+    " Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
+    VAMActivate github:ryanoasis/vim-devicons
     " A tree explorer plugin for navigating the filesystem
     VAMActivate github:scrooloose/nerdtree
     " aims at making NERDTree feel like a true panel, independent of tabs
@@ -66,13 +65,13 @@
 
 " programming {{{
     " Vim Liquid runtime files with Jekyll enhancements
-    VAMActivate github:tpope/vim-liquid
+    " VAMActivate github:tpope/vim-liquid
     " Language Server Protocol (LSP) support for vim and neovim.
-    VAMActivate github:autozimu/LanguageClient-neovim
+    " VAMActivate github:autozimu/LanguageClient-neovim
     " A plugin for deoplete to get flow autocompletion functionality.
     " VAMActivate github:steelsojka/deoplete-flow
     " provides syntax highlighting, indenting, and some editing commands
-    VAMActivate github:tpope/vim-cucumber
+    " VAMActivate github:tpope/vim-cucumber
     " EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
     VAMActivate github:editorconfig/editorconfig-vim
     " Syntax highlighting, matching rules and mappings for the original Markdown and extensions
@@ -99,9 +98,9 @@
     VAMActivate github:niklasl/vim-rdf
     " VAMActivate github:seebi/semweb.vim
     " React JSX syntax highlighting and indenting for vim
-    VAMActivate github:mxw/vim-jsx
+    " VAMActivate github:mxw/vim-jsx
     " RAML plugin for VIM
-    VAMActivate github:kennethzfeng/vim-raml
+    " VAMActivate github:kennethzfeng/vim-raml
     " This is a Vim plugin that provides Tern-based JavaScript editing support.
     " VAMActivate github:marijnh/tern_for_vim
     " dockerfile syntax
@@ -147,11 +146,18 @@
     " VAMActivate github:sjl/gundo.vim
     " lightweight implementation of emacs' kill ring for vim
     " VAMActivate github:maxbrunsfeld/vim-yankstack
-    " Supertab allows you to use <Tab> for all your insert completion needs
-    " VAMActivate github:ervandew/supertab
     " fast, as-you-type, fuzzy-search code completion engine for Vim
     " VAMActivate github:valloric/youcompleteme
     " The fancy start screen for Vim
     " VAMActivate github:mhinz/vim-startify
+    " Dark powered asynchronous completion framework for neovim/Vim8
+    " VAMActivate github:Shougo/deoplete.nvim
+    " Brings JetBrains/IntelliJ IDEs magic to Neovim with minimal setup
+    " VAMActivate github:beeender/Comrade
+    " Fast, Extensible, Async Completion Framework for Neovim
+    " broken atm: VAMActivate github:roxma/nvim-completion-manager
+    " Ranger integration in vim and neovim
+    " VAMActivate github:francoiscabrol/ranger.vim
+    " VAMActivate github:airodactyl/neovim-ranger
 "}}}
 
