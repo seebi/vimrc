@@ -1,8 +1,8 @@
-" general {{{
+" general 
     " Dark powered asynchronous completion framework for neovim/Vim8
     " VAMActivate github:Shougo/deoplete.nvim
     " Fast, Extensible, Async Completion Framework for Neovim
-    VAMActivate github:roxma/nvim-completion-manager
+    " VAMActivate github:roxma/nvim-completion-manager
     " Ranger integration in vim and neovim
     " VAMActivate github:francoiscabrol/ranger.vim
     " VAMActivate github:airodactyl/neovim-ranger
@@ -25,9 +25,9 @@
     VAMActivate github:godlygeek/tabular
     " True Sublime Text style multiple selections
     VAMActivate github:terryma/vim-multiple-cursors
-"}}}
 
-" nerd-tree {{{
+
+" nerd-tree 
     " A tree explorer plugin for navigating the filesystem
     VAMActivate github:scrooloose/nerdtree
     " aims at making NERDTree feel like a true panel, independent of tabs
@@ -36,9 +36,9 @@
     VAMActivate github:Xuyuanp/nerdtree-git-plugin
     " A plugin that adds some fugitive functionality directly to nerdtree for vim
     VAMActivate github:low-ghost/nerdtree-fugitive
-" }}}
+" 
 
-" searching {{{
+" searching 
     " a front for ag, A.K.A. the_silver_searcher.
     VAMActivate github:rking/ag.vim
     " Fold away lines not matching the last search pattern
@@ -51,9 +51,9 @@
     VAMActivate github:Wolfy87/vim-enmasse
     " substitute preview
     VAMActivate github:osyo-manga/vim-over
-"}}}
 
-" motions / operators {{{
+
+" motions / operators 
     " Delete/change/add parentheses/quotes/XML-tags/much more with ease
     VAMActivate github:tpope/vim-surround
     " Vim motions on speed!
@@ -62,9 +62,9 @@
     VAMActivate github:tommcdo/vim-exchange
     " plugin to create your own text objects without pain
     VAMActivate github:kana/vim-textobj-user
-"}}}
 
-" programming {{{
+
+" programming 
     " Vim Liquid runtime files with Jekyll enhancements
     VAMActivate github:tpope/vim-liquid
     " Language Server Protocol (LSP) support for vim and neovim.
@@ -106,26 +106,26 @@
     " VAMActivate github:marijnh/tern_for_vim
     " dockerfile syntax
     VAMActivate github:ekalinin/Dockerfile.vim
-"}}}
 
-" mailing {{{
+
+" mailing 
     " Check for attachments when writing mails with mutt
     VAMActivate github:chrisbra/CheckAttach
     " Erase signatures at the end of your replies
     VAMActivate Mail_Sig.set
     " Easily insert references to URLs in emails
     VAMActivate uri-ref
-"}}}
 
-" syntaxes {{{
+
+" syntaxes 
       VAMActivate github:Glench/Vim-Jinja2-Syntax
     " VAMActivate applescript.vim
     " VAMActivate logstash
     " VAMActivate syntaxconkyrc
     VAMActivate github:coddingtonbear/confluencewiki.vim
-"}}}
 
-" currently not needed {{{
+
+" currently not needed 
     " VAMActivate JSON
     " VAMActivate conque
     " VAMActivate vim-abolish
@@ -153,5 +153,5 @@
     " VAMActivate github:valloric/youcompleteme
     " The fancy start screen for Vim
     " VAMActivate github:mhinz/vim-startify
-"}}}
+
 
