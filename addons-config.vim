@@ -27,7 +27,7 @@ inoremap <expr> <silent> <S-TAB>  pumvisible()?"\<C-p>":"\<S-TAB>"
 
 "{{{ UltiSnips
 let g:UltiSnipsEditSplit = 'horizontal'
-let g:UltiSnipsSnippetsDir = '/Users/seebi/.vim/UltiSnips'
+let g:UltiSnipsSnippetsDir = NVIMHOME . '/UltiSnips'
 " UltiSnips triggering
 let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
