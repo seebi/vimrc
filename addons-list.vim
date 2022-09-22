@@ -25,6 +25,10 @@
     VAMActivate github:godlygeek/tabular
     " True Sublime Text style multiple selections
     VAMActivate github:terryma/vim-multiple-cursors
+    " shortly hightlight the yanked content
+    VAMActivate github:machakann/vim-highlightedyank
+    " Text objects for dealing with URIs
+    VAMActivate github:jceb/vim-textobj-uri.git
 
 
 " nerd-tree 
@@ -65,6 +69,8 @@
 
 
 " programming 
+    " Vim syntax for TOML
+    VAMActivate github:cespare/vim-toml
     " Vim Liquid runtime files with Jekyll enhancements
     VAMActivate github:tpope/vim-liquid
     " Language Server Protocol (LSP) support for vim and neovim.
@@ -123,6 +129,7 @@
     " VAMActivate logstash
     " VAMActivate syntaxconkyrc
     VAMActivate github:coddingtonbear/confluencewiki.vim
+    VAMActivate github:hashivim/vim-terraform
 
 
 " currently not needed 

@@ -94,6 +94,8 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 nmap <leader>tc :SyntasticToggleMode<CR>
 " https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 let g:syntastic_javascript_checkers = ['eslint']
+" https://gist.github.com/thikade/87f643ce8db86423fa7d245f7556a601
+let g:syntastic_yaml_checkers = [ "yamllint" ]
 "}}}
 
 "{{{ CheckAttach

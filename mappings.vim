@@ -73,3 +73,6 @@ nmap <leader>Gh :cd $HOME<CR>:pwd<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+" MD: mark as code
+xmap <leader>c S`
+nmap <leader>c ysiw`
