@@ -8,6 +8,7 @@ set undofile        " new feature of undo files
 
 let &directory = NVIMHOME . "/swap" " no more swapfiles in the same directory
 let &backupdir = NVIMHOME . "/backups" " no more backupfiles in the same directory
+
 set backupskip=/tmp/*,/private/tmp/* " http://vim.wikia.com/wiki/Editing_crontab
 
 " prevents some security exploits having to do with modelines in files

@@ -1,28 +1,36 @@
 
-"{{{ deoplete
+"{{{ schlepp
+vmap <unique> <S-up>    <Plug>SchleppUp
+vmap <unique> <S-down>  <Plug>SchleppDown
+vmap <unique> <S-left>  <Plug>SchleppLeft
+vmap <unique> <S-right> <Plug>SchleppRight
+vmap <unique> D <Plug>SchleppDup
+"}}}
+"
+"{{{ deoplete and completion
+" https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+" :set completeopt=longest,menuone
+
 " let g:deoplete#enable_at_startup = 1
-" let g:deoplete#sources#flow#flow_bin = 'flow'
+" let g:deoplete#disable_auto_complete = 1
+" let g:deoplete#complete_method = "omnifunc"
+" if !exists('g:deoplete#omni#input_patterns')
+  " let g:deoplete#omni#input_patterns = {}
+" endif
+" inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 "}}}
 
 "{{{ LanguageClient-neovim
 " Required for operations modifying multiple buffers like rename.
-set hidden
+" set hidden
 
-let g:LanguageClient_serverCommands = {
-    \ 'javascript': ['javascript-typescript-stdio'],
-    \ }
+" let g:LanguageClient_serverCommands = {
+"     \ 'javascript': ['javascript-typescript-stdio'],
+"     \ }
 
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
-"}}}
-"
-"{{{ nvim-completion-manager
-" let g:UltiSnipsExpandTrigger = "<Plug>(ultisnips_expand)"
-inoremap <silent> <c-u> <c-r>=cm#sources#ultisnips#trigger_or_popup("\<Plug>(ultisnips_expand)")<cr>
-" smart tab for auto complete
-inoremap <expr> <silent> <Tab>  pumvisible()?"\<C-n>":"\<TAB>"
-inoremap <expr> <silent> <S-TAB>  pumvisible()?"\<C-p>":"\<S-TAB>"
+" nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+" nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+" nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 "}}}
 
 "{{{ UltiSnips
