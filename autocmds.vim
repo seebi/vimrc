@@ -62,6 +62,14 @@ augroup END
 " vimrc_on_the_fly from vimcasts
 autocmd bufwritepost .vimrc source $MYVIMRC
 
+
+augroup json
+    " https://vi.stackexchange.com/a/10563
+    autocmd FileType json set filetype=json
+    " autocmd FileType json set foldmethod=syntax
+augroup END
+
+
 augroup markdown
     " Markdown (no need for modula2 :)
     autocmd BufRead,BufNewFile *.md set filetype=markdown
