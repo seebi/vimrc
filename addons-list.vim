@@ -29,6 +29,14 @@
     VAMActivate github:machakann/vim-highlightedyank
     " Text objects for dealing with URIs
     VAMActivate github:jceb/vim-textobj-uri.git
+    " Improved fzf.vim written in lua
+    VAMActivate github:ibhagwan/fzf-lua.git
+    " A fancy, configurable, notification manager for NeoVim
+    VAMActivate github:rcarriga/nvim-notify.git
+    " collection of Lua modules (needed for parrot)
+    VAMActivate github:nvim-lua/plenary.nvim.git
+    " seamless integration of current LLM APIs into Neovim workflows
+    " VAMActivate github:frankroeder/parrot.nvim.git
 " }}}
 
 " nerd-tree {{{
@@ -136,6 +144,7 @@
     " VAMActivate syntaxconkyrc
     VAMActivate github:coddingtonbear/confluencewiki.vim
     VAMActivate github:hashivim/vim-terraform
+    VAMActivate github:pedrohdz/vim-yaml-folds
 " }}}
 
 " currently not needed {{{
