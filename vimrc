@@ -12,6 +12,8 @@ let NVIM_LISTEN_ADDRESS=$NVIM_LISTEN_ADDRESS
 
 let NVIMHOME = $HOME . "/.config/nvim/"
 
+execute "source " . NVIMHOME . "neovim.vim"
+
 execute "source " . NVIMHOME . "autocmds.vim"
 execute "source " . NVIMHOME . "basics.vim"
 execute "source " . NVIMHOME . "mappings.vim"
@@ -22,8 +24,3 @@ execute "source " . NVIMHOME . "addons-list.vim"
 execute "source " . NVIMHOME . "addons-config.vim"
 
 execute "source " . NVIMHOME . "private.vim"
-
-if has('nvim')
-    execute "source " . NVIMHOME . "neovim.vim"
-endif
-
